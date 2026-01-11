@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshirts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">T-shirts</div>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <span id="menu-icon"><i id="icon" class="fa-solid fa-list"></i></span>
+        </nav>
+        <section id="home">
+            <div class="main-container">
+                <div class="over-laping">
+                    <div class="home-content">
+                        <h1>Style That Speaks-Find Your Perfect <span>T-Shirt</span></h1>
+                        <p>Stay ahead of fashion trends with our exclusive t-shirt collection From daily wear to weekend
+                            adventures our designs bring energy to your wardrobe Comfort</p>
+                        <div class="btn-container">
+                            <a>Visit Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+</body>
+<script>
+    const MenuBar = document.querySelector('#menu-icon');
+    const NavLinks = document.querySelector('#nav-links');
+
+    MenuBar.addEventListener('click', () => {
+        NavLinks.classList.toggle('menu-links')
+
+        if (NavLinks.className == 'menu-links') {
+            document.querySelector('#icon').className = 'fa-solid fa-xmark'
+        } else {
+            document.querySelector('#icon').className = 'fa-solid fa-list'
+        }
+    })
+</script>
+
+</html>

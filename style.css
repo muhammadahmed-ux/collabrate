@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+    height: 4rem;
+    background-color: black;
+}
+
+nav .logo {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2rem;
+    color: yellow;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: 0.3s;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav span {
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.menu-links {
+    position: absolute;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.700);
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-container {
+    height: calc(100vh - 4rem);
+    width: 100%;
+    background-image: url(assets/home-bg.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.over-laping {
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.850);
+    display: flex;
+    justify-content: center;
+}
+
+
+.home-content {
+    width: 82%;
+}
+.home-content h1 {
+    color: #fff;
+    font-family: "jost", sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.home-content h1 span {
+    color: yellow;
+}
+
+.home-content p {
+    color: white;
+    text-align: center;
+    font-family: "jost", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    
+}
+
+
+
+.home-content .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+}
+
+.home-content .btn-container a {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: "jost", sans-serif;
+    text-align: center;
+    box-shadow: 0 0 0.5rem 2px yellow;
+    border: none;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+}
+
+.home-content .btn-container a:hover {
+    box-shadow: 0 0 2rem 10px  #fff;
+    background-color: yellow;
+    color:  black;
+}
+
+
+
+@media only screen and (max-width:788px) {
+    nav ul {
+        display: none;
+    }
+
+    nav span {
+        display: block;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        margin-top: 0.5rem;
+    }
+}
