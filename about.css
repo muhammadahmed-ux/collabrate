@@ -1,0 +1,185 @@
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 55, 122, 1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 24px;
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-us .about-text {
+    flex: 1;
+    max-width: 55%;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us .about-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.mission-vision {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+.mission-vision h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.mission, .vision {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.expertise {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.expertise h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.expertise-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.expertise-item {
+    flex: 1;
+    min-width: 22%;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.expertise-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.why-choose-us {
+    background-color: #eaeaea;
+    padding: 80px 0;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.benefit-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefit-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.benefit-item p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .about-image {
+        flex: 1 100%;
+        max-width: 100%;
+    }
+
+    .expertise-list {
+        flex-direction: column;
+    }
+}
